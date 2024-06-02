@@ -1,0 +1,45 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   style.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/24 10:17:37 by aelomari          #+#    #+#             */
+/*   Updated: 2024/05/24 11:43:32 by aelomari         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.seachbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.setting {
+	color: #212832;
+	background-color: #FED36A;
+	padding: 8px;
+	margin: 20px;
+
+	font-size: large;
+}
+
+.search {
+	display: flex;
+	width: 100%;
+	background-color: #455A64;
+	color: #6F8793;
+	padding: 10px;
+	padding-right: 28vw;
+	margin: 20px;
+	font-size: large;
+	margin-right: 0px;
+}
+
+input {
+	border: none;
+	background-color: #455A64;
+	color: #6F8793;
+}

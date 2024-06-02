@@ -1,0 +1,101 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   style.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/24 10:17:09 by aelomari          #+#    #+#             */
+/*   Updated: 2024/05/24 11:49:15 by aelomari         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.Container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 85px;
+	background-color: #263238;
+	color: #617D8A;
+	bottom: 0px;
+	left: 0px;
+	position: fixed;
+	width: 100%;
+}
+
+.left {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 50%;
+}
+
+.right {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 50%;
+}
+
+.Home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 85px;
+	background-color: #263238;
+}
+
+.Chat {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 85px;
+	background-color: #263238;
+}
+
+.Home:hover {
+	color: #FED36A;
+}
+
+.Chat:hover {
+	color: #FED36A;
+}
+
+.Notification:hover {
+	color: #FED36A;
+}
+
+.Calendar:hover {
+	color: #FED36A;
+}
+
+.Add {
+	display: flex;
+
+	height: 40px;
+	width: 40px;
+	color: #263238;
+	background-color: #FED36A;
+	justify-content: center;
+	align-items: center;
+}
+
+.Notification {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 85px;
+	background-color: #263238;
+}
+
+.Calendar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 85px;
+	background-color: #263238;
+}

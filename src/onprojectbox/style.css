@@ -1,0 +1,92 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   style.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/05/24 10:17:30 by aelomari          #+#    #+#             */
+/*   Updated: 2024/05/24 11:20:47 by aelomari         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.project {
+	width: 90vw;
+	color: white;
+	background-color: #455A64;
+	margin: auto;
+
+	.titles {
+		font-size: 30px;
+	}
+}
+
+.left-right {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 5px;
+	
+	
+	.left {
+		margin: 5px;
+		font-size: 12px;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		h6 {
+			margin: 5px;
+		}
+
+		.avatar {
+			margin: 5px;
+		}
+
+		.date {
+			margin: 5px;
+		}
+		
+	}
+	
+	
+	.right {
+		margin-right: 5px;
+		color: #2C4653;
+	}
+}
+
+.titles {
+	padding: 10px;
+}
+
+.circular-progress {
+	--size: 250px;
+	--half-size: calc(var(--size) / 2);
+	--stroke-width: 20px;
+	--radius: calc((var(--size) - var(--stroke-width)) / 2);
+	--circumference: calc(var(--radius) * pi * 2);
+	--dash: calc((var(--progress) * var(--circumference)) / 100);
+}
+
+.circular-progress circle {
+	cx: var(--half-size);
+	cy: var(--half-size);
+	r: var(--radius);
+	stroke-width: var(--stroke-width);
+	fill: none;
+	stroke-linecap: round;
+}
+
+.circular-progress circle.bg {
+	stroke: #2C4653;
+}
+
+.circular-progress circle.fg {
+	transform: rotate(-90deg);
+	transform-origin: var(--half-size) var(--half-size);
+	stroke-dasharray: var(--dash) calc(var(--circumference) - var(--dash));
+	transition: stroke-dasharray 0.3s linear 0s;
+	stroke: #FED36A;
+}

@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   App.js                                             :+:      :+:    :+:   */
+/*   style.css                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 10:18:10 by aelomari          #+#    #+#             */
-/*   Updated: 2024/05/24 12:15:09 by aelomari         ###   ########.fr       */
+/*   Created: 2024/05/24 10:16:51 by aelomari          #+#    #+#             */
+/*   Updated: 2024/05/24 11:33:49 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import "./App.css";
-import Home from "./home";
-import Footer from "./footer";
+.Head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px;
+	margin-bottom: 0px;
+	color: #FFFFFF;
 
-function App() {
-  return (
-    <div className="App">
-      <Home />
-      <Footer />
-    </div>
-  );
+	
+
+	h1 {
+		font-size: 1.5em;
+
+	}
 }
-
-export default App;

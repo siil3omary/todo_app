@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   App.js                                             :+:      :+:    :+:   */
+/*   index.js                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 10:18:10 by aelomari          #+#    #+#             */
-/*   Updated: 2024/05/24 12:15:09 by aelomari         ###   ########.fr       */
+/*   Created: 2024/05/24 10:17:35 by aelomari          #+#    #+#             */
+/*   Updated: 2024/05/24 11:54:59 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import "./App.css";
-import Home from "./home";
-import Footer from "./footer";
+import React from "react";
+import "./style.css";
+import TuneIcon from "@mui/icons-material/Tune";
+import SearchIcon from '@mui/icons-material/Search';
 
-function App() {
+export default function SearchBar() {
   return (
-    <div className="App">
-      <Home />
-      <Footer />
+    <div>
+      <div className="seachbar">
+		<div className="search">	
+			<SearchIcon />
+			<input className="" type="text" placeholder="Search ..." />
+		</div>
+        <div className="setting">
+          <TuneIcon />
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;

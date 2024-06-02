@@ -1,26 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   App.js                                             :+:      :+:    :+:   */
+/*   style.css                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 10:18:10 by aelomari          #+#    #+#             */
-/*   Updated: 2024/05/24 12:15:09 by aelomari         ###   ########.fr       */
+/*   Created: 2024/05/24 10:18:02 by aelomari          #+#    #+#             */
+/*   Updated: 2024/05/24 11:40:51 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import "./App.css";
-import Home from "./home";
-import Footer from "./footer";
-
-function App() {
-  return (
-    <div className="App">
-      <Home />
-      <Footer />
-    </div>
-  );
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 25px;
 }
 
-export default App;
+.welcomeback {
+	color: #FED36A;
+
+
+}
+
+.username {
+	color: #FFFFFF;
+	font-size: 1.5rem;
+
+}
+
+.profile {
+	background-image: url("../../public/download.png");
+	background-size: cover;
+	border-radius: 50%;
+
+	height: 5vh;
+	width: 5vh;
+}

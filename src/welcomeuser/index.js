@@ -1,26 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   App.js                                             :+:      :+:    :+:   */
+/*   index.js                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/24 10:18:10 by aelomari          #+#    #+#             */
-/*   Updated: 2024/05/24 12:15:09 by aelomari         ###   ########.fr       */
+/*   Created: 2024/05/24 10:17:59 by aelomari          #+#    #+#             */
+/*   Updated: 2024/05/24 10:18:00 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-import "./App.css";
-import Home from "./home";
-import Footer from "./footer";
+import React from 'react'
+import './style.css'
 
-function App() {
+
+export default function Welcome() {
   return (
-    <div className="App">
-      <Home />
-      <Footer />
-    </div>
-  );
-}
+	<div>
+		<div className='header'>
+			<div className='welcomeing'>
+				<div className='welcomeback'>Welcome Back!</div>	
+				<div className='username'>Ayman Elomari</div>
+			</div>
+			<div className='profile'>
 
-export default App;
+			</div>
+		</div>
+	</div>
+  )
+}
