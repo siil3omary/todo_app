@@ -6,15 +6,13 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 10:17:43 by aelomari          #+#    #+#             */
-/*   Updated: 2024/05/25 15:42:48 by aelomari         ###   ########.fr       */
+/*   Updated: 2024/06/02 19:11:12 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 import React from "react";
 import "./style.css";
 import Tasks from "../tasks";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import TaskCompleted from "../taskcompletedpage";
 
 export default function Taskcomp() {
@@ -23,7 +21,7 @@ export default function Taskcomp() {
       <div className="Completedtask">
         <div className="head">
           <h2>Task Completed</h2>
-		  <a href="/taskcompleted" className="viewall">
+		  <a to="/taskcompleted" className="viewall">
 			View All
 					  </a>
         </div>

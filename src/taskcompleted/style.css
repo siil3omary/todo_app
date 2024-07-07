@@ -6,7 +6,7 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 10:17:46 by aelomari          #+#    #+#             */
-/*   Updated: 2024/05/25 15:42:56 by aelomari         ###   ########.fr       */
+/*   Updated: 2024/06/02 19:08:56 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@
 	margin-bottom: 0px;
 	color: #FFFFFF;
 }
-
+/* 
 a {
 	font-size: 20px;
 	color: #FED36A;
 	right: 20px;
 	position: absolute;
-}
+} */
 
 .taskss {
 	display: flex;

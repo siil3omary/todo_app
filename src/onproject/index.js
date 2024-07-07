@@ -6,20 +6,27 @@
 /*   By: aelomari <aelomari@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/24 10:16:49 by aelomari          #+#    #+#             */
-/*   Updated: 2024/05/24 12:19:41 by aelomari         ###   ########.fr       */
+/*   Updated: 2024/06/02 19:26:09 by aelomari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 import React from "react";
 import "./style.css";
 import Boxproject from "../onprojectbox";
+import { useNavigate } from "react-router-dom";
+
 
 export default function Onproject() {
+	const Navigate = useNavigate();
+function handleNav()
+{
+	Navigate("/taskcompleted");
+}
   return (
     <div className="Onprojects">
       <div className="Head">
         <h1>On Project</h1>
-        <a href="https://example.com">See All</a>
+		<button onClick={handleNav}>Go to Task Completed</button>
       </div>
       <Boxproject title="Mobile App Wireframe" date="21 March" progress={75} />
       <Boxproject title="Real Estate App Design" date="20 June" progress={60} />
